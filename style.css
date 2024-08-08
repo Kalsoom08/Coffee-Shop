@@ -1,0 +1,88 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: 
+  linear-gradient(rgba(255, 255, 255, 0.701), rgba(255, 255, 255, 0.701)), 
+  url(./Images/MuchaTseBle.jpeg);
+  background-size: cover;
+ background-attachment: scroll;
+
+}
+/* Navigation Bar */
+nav{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+#logo img{
+  width: 80px;
+  height: 80px;
+  padding-left: 40px;
+}
+
+.ancor-tags{
+  margin-top: 20px;
+  padding-right: 60px;
+}
+.ancor-tags a{
+  padding: 10px 20px;
+  color: rgb(114, 30, 30);
+  text-decoration: none;
+}
+.ancor-tags a:hover{
+  border: 1px solid rgb(114, 30, 30);
+  border-radius: 10px;
+  background-color: rgb(114, 30, 30);
+  color: #fff;
+  }
+
+  /* Small Screen */
+  @media(max-width:1000px) {
+   /* Navigation Bar */
+ #logo img{
+   width: 70px;
+   height: 70px;
+   padding-left: 30px;
+ }
+ 
+ .ancor-tags{
+   padding-right: 50px;
+ }
+ .ancor-tags a{
+   padding: 10px 10px;
+}
+  }
+
+/* Tab Screens */
+@media(max-width:780px) {
+  /* Navigation Bar */
+#logo img{
+  width: 60px;
+  height: 60px;
+}
+.ancor-tags a{
+  font-size:2.7vh;
+}
+ }
+
+ /* Mobile  */
+ @media(max-width:400px) {
+  /* Navigation Bar */
+#logo img{
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.ancor-tags{
+  padding-right: 10px;
+}
+.ancor-tags a{
+  padding: 10px 05px;
+  font-size: 2.6vh;
+}
+ }
+
+
