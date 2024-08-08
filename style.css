@@ -221,10 +221,10 @@ font-size: 40px;
 }
 
 .ancor-tags{
-  padding-right: 10px;
+  padding-right: 0px;
 }
 .ancor-tags a{
-  padding: 10px 05px;
+  padding: 5px 05px;
   font-size: 1.6vh;
 }
 
@@ -246,16 +246,16 @@ font-size: 4vh;
   margin-left: 0px;
 }
 .home-heading p{
-  font-size: 2vh;
+  font-size: 1.3vh;
 }
 .home-heading button{
-  padding: 5px;
-  margin-left: 0px;
-  font-size: 1.5vh;
+  padding: 2px;
+  margin-left: 05px;
+  font-size: 1.3vh;
 }
 
 .home-image img{
-  width: 200px;
+  width: 140px;
 }
 .home-image {
   position: relative;
