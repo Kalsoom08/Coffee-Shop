@@ -2,13 +2,22 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family:Josfen;
+  src: url(./Fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Josfen-2;
+  src: url(./Fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
 body{
+ 
   background-image: 
   linear-gradient(rgba(255, 255, 255, 0.701), rgba(255, 255, 255, 0.701)), 
   url(./Images/MuchaTseBle.jpeg);
   background-size: cover;
  background-attachment: scroll;
-
+font-family: Josfen-2;
 }
 /* Navigation Bar */
 nav{
@@ -38,8 +47,66 @@ nav{
   color: #fff;
   }
 
+  /* Home */
+  .home{
+    display: flex;
+    justify-content: space-between;
+  }
+  .home-heading{
+    padding: 150px 70px;
+    color: rgb(114, 30, 30);
+    font-size: large;
+    font-family: Josfen;
+  }
+  .home-heading h1{
+    font-size:45px;
+  }
+  h1 em{
+  font-size: 60px;
+  font-style: normal; 
+  }
+  .home-heading p{
+    padding:5px 0;
+  }
+  .home-heading img{
+    margin: 10px 0px;
+    margin-left: 15px;
+    width: 20px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.735);
+    border-radius: 15px;
+  }
+  .home-heading button{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.735);
+    border: 1px solid  rgb(114, 30, 30);
+    background-color: rgb(114, 30, 30);
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+
+.home-image img{
+    width: 400px;
+  }
+.home-image {
+  position: relative;
+  animation-name: move;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+@keyframes move {
+  from {right:0px;}
+  to {right: 100px; }
+}
+
+
   /* Small Screen */
   @media(max-width:1000px) {
+
    /* Navigation Bar */
  #logo img{
    width: 70px;
@@ -53,6 +120,43 @@ nav{
  .ancor-tags a{
    padding: 10px 10px;
 }
+
+/* Home */
+
+.home-heading{
+  padding: 150px 50px;
+}
+.home-heading h1{
+  font-size:35px;
+}
+h1 em{
+font-size: 50px;
+}
+.home-heading img{
+  width: 18px;
+  padding: 8px;
+ 
+}
+.home-heading button{
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.home-image img{
+  width: 300px;
+}
+.home-image {
+  position: relative;
+  animation-name: move;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+@keyframes move {
+  from {right:0px;}
+  to {right: 50px; }
+}
   }
 
 /* Tab Screens */
@@ -63,9 +167,49 @@ nav{
   height: 60px;
 }
 .ancor-tags a{
+  padding: 5px;
   font-size:2.7vh;
 }
- }
+
+/* Home */
+.home-heading{
+  padding: 150px 20px;
+}
+.home-heading h1{
+  font-size:25px;
+}
+h1 em{
+font-size: 40px;
+}
+.home-heading img{
+  width: 15px;
+  padding: 5px;
+ 
+}
+.home-heading p{
+  font-size: small;
+}
+.home-heading button{
+  padding: 5px;
+}
+
+.home-image img{
+  width: 300px;
+}
+.home-image {
+  position: relative;
+  animation-name: move;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+@keyframes move {
+  from {right:0px;}
+  to {right: 5%; }
+}
+  }
+
 
  /* Mobile  */
  @media(max-width:400px) {
@@ -81,8 +225,53 @@ nav{
 }
 .ancor-tags a{
   padding: 10px 05px;
-  font-size: 2.6vh;
+  font-size: 1.6vh;
 }
- }
+
+/* Home */
+.home-heading{
+  padding: 60px 20px;
+}
+.home-heading h1{
+  font-size:3vh;
+}
+h1 em{
+font-size: 4vh;
+}
+.home-heading img{
+  width: 10px;
+  padding: 2px;
+  margin: 08px 0px;
+  margin-bottom: 0;
+  margin-left: 0px;
+}
+.home-heading p{
+  font-size: 2vh;
+}
+.home-heading button{
+  padding: 5px;
+  margin-left: 0px;
+  font-size: 1.5vh;
+}
+
+.home-image img{
+  width: 200px;
+}
+.home-image {
+  position: relative;
+  animation-name: move;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+@keyframes move {
+  from {right:0px;}
+  to {right: 5%; }
+}
+  }
+
+
+
 
 
