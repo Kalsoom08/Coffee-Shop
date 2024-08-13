@@ -13,11 +13,12 @@
 body{
  
   background-image: 
-  linear-gradient(rgba(255, 255, 255, 0.701), rgba(255, 255, 255, 0.701)), 
-  url(./Images/MuchaTseBle.jpeg);
+  linear-gradient(rgba(255, 255, 255, 0.395), rgba(255, 255, 255, 0.395)), 
+  url(./Images/Coffee\ espresso\ template1.jpg);
   background-size: cover;
  background-attachment: scroll;
 font-family: Josfen-2;
+color: rgb(75, 38, 20);
 }
 /* Navigation Bar */
 nav{
@@ -36,14 +37,14 @@ nav{
   padding-right: 60px;
 }
 .ancor-tags a{
+  color: rgb(75, 38, 20);
   padding: 10px 20px;
-  color: rgb(114, 30, 30);
   text-decoration: none;
 }
 .ancor-tags a:hover{
-  border: 1px solid rgb(114, 30, 30);
+  border: 1px solid rgb(75, 38, 20);
   border-radius: 10px;
-  background-color: rgb(114, 30, 30);
+  color: rgb(75, 38, 20);
   color: #fff;
   }
 
@@ -54,7 +55,7 @@ nav{
   }
   .home-heading{
     padding: 150px 70px;
-    color: rgb(114, 30, 30);
+
     font-size: large;
     font-family: Josfen;
   }
@@ -68,25 +69,26 @@ nav{
   .home-heading p{
     padding:5px 0;
   }
-  .home-heading img{
-    margin: 10px 0px;
-    margin-left: 15px;
-    width: 20px;
-    padding: 10px;
-    background-color: rgba(240, 248, 255, 0.735);
-    border-radius: 15px;
-  }
+  
   .home-heading button{
     text-decoration: none;
     color: rgba(240, 248, 255, 0.735);
-    border: 1px solid  rgb(114, 30, 30);
-    background-color: rgb(114, 30, 30);
+    border: 1px solid  rgb(75, 38, 20);
+    color: rgb(75, 38, 20);
+    background-color: transparent;
     padding: 10px;
     margin-left: 20%;
     margin-top: 15px;
     border-radius: 5px;
   }
+  .Offer{
+    margin-top: -90px;
+    margin-left: -100px;
 
+  }
+  .Offer img{
+    width: 400px;
+  }
 .home-image img{
     width: 400px;
   }
@@ -107,19 +109,17 @@ nav{
 .coffee-container{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 90px;
+  margin-top: 40px;
 }
 .coffee-container .coffee-cup{
   width: 190px;
   height: 190px;
   background-color: rgba(240, 248, 255, 0.735);
-  color: rgb(114, 30, 30);
   border-radius: 10px;
   text-align: center;
 }
 
 .coffee-cup img{
-  background-color: rgba(240, 248, 255, 0.826);
   width: 150px;
   height: 130px;
   position: relative;
@@ -162,16 +162,18 @@ nav{
 h1 em{
 font-size: 50px;
 }
-.home-heading img{
-  width: 18px;
-  padding: 8px;
- 
-}
 .home-heading button{
   padding: 8px;
   margin-top: 8px;
 }
+.Offer{
+  margin-top: -70px;
+  margin-left: -70px;
 
+}
+.Offer img{
+  width: 300px;
+}
 .home-image img{
   width: 300px;
 }
@@ -199,13 +201,12 @@ font-size: 50px;
     width: 190px;
     height: 190px;
     background-color: rgba(240, 248, 255, 0.735);
-    color: rgb(114, 30, 30);
+
     border-radius: 10px;
     text-align: center;
   }
   
   .coffee-cup img{
-    background-color: rgba(240, 248, 255, 0.826);
     width: 150px;
     height: 130px;
     position: relative;
@@ -253,7 +254,14 @@ font-size: 40px;
 .home-heading button{
   padding: 5px;
 }
+.Offer{
+  margin-top: -70px;
+  margin-left: -70px;
 
+}
+.Offer img{
+  width: 300px;
+}
 .home-image img{
   width: 300px;
 }
@@ -300,7 +308,7 @@ font-size: 1.7vh;
 }
 
 .ancor-tags{
-  padding-right: 0px;
+  padding-right: 10px;
 }
 .ancor-tags a{
   padding: 5px 05px;
@@ -332,7 +340,15 @@ font-size: 4vh;
   margin-left: 05px;
   font-size: 1.3vh;
 }
-
+.Offer{
+  margin-top: -40px;
+}
+.Offer img{
+  width: 140px;
+}
+.home-image img{
+  width: 300px;
+}
 .home-image img{
   width: 140px;
 }
@@ -354,6 +370,7 @@ font-size: 4vh;
 display: grid;
 grid-template-columns: 1;
 gap: 60px;
+margin-top: 30px;
 }
 .coffee-container .coffee-cup{
   width: 250px;
@@ -363,9 +380,6 @@ gap: 60px;
 .coffee-cup img{
   width: 180px;
   height: 150px;
-  position: relative;
-  top: -40px;
-  border-radius: 50%;
 }
 .coffee-cup h2{
   margin-top: -15px;
