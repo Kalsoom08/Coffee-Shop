@@ -113,8 +113,11 @@ nav{
 }
 .coffee-container .coffee-cup{
   width: 190px;
-  height: 190px;
-  background-color: rgba(240, 248, 255, 0.735);
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.265),rgba(0, 0, 0, 0.265)) , 
+  url(./Images/back4.jpg);
+  background-size: cover;
+  color: #fff;
   border-radius: 10px;
   text-align: center;
 }
@@ -131,7 +134,7 @@ nav{
 }
 .coffee-cup p{
   font-size: 13px;
-  padding: 10px;
+  padding: 05px;
 }
 
 /* Image-text */
@@ -151,6 +154,34 @@ nav{
   font-weight: 500;
   margin-right: 30px;
   text-align: justify;
+}
+
+/* Cold coffee */
+
+.cold-cofe-conatiner{
+display: flex;
+justify-content: space-evenly;
+margin-bottom: 10px;
+margin-top: 90px;
+}
+.cold-cofe-conatiner .cofe-cup{
+  width: 20%;
+  height: 25%;
+  background-color: rgba(185, 117, 83, 0.589);
+  border: 5px solid white;
+  text-align: center;
+}
+.cold-cofe-conatiner div img{
+  padding: 30px 0;
+  width: 100px;
+  height: 150px;
+}
+.cold-cofe-conatiner .text-body{
+background-color: #fff;
+padding: 12px;
+}
+.cold-cofe-conatiner .cofe-cup h4{
+  font-size: 3vh;
 }
   /* Small Screen */
   @media(max-width:1000px) {
@@ -207,7 +238,7 @@ font-size: 50px;
   from {right:0px;}
   to {right: 50px; }
 }
-  }
+ 
 
   /* Coffee */
   .coffee-container{
@@ -236,7 +267,7 @@ font-size: 50px;
   }
   .coffee-cup p{
     font-size: 13px;
-    padding: 10px;
+    padding: 5px;
   }
   
 /* Image-text */
@@ -252,6 +283,11 @@ font-size: 50px;
   padding: 10px 20px;
   font-size: 4vh;
   font-weight: 450;
+} 
+
+.cold-cofe-conatiner .cofe-cup h4{
+  font-size: 2.5vh;
+}
 }
 
 /* Tab Screens */
@@ -343,7 +379,28 @@ padding: 40px 30px;
   padding:0 20px;
 }
 
+/* Cold */
+  .cold-cofe-conatiner {
+    display: grid;
+    grid-template-columns: 30% 30%; 
+    justify-content:space-evenly; 
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
   }
+  
+  .cold-cofe-conatiner .cofe-cup {
+    width: 220px;
+    height: 250px;
+  }
+  
+  .cold-cofe-conatiner img {
+    padding: 30px 40px;
+    width: 100px;
+    height: 150px;
+  }
+  
+}
 
 
  /* Mobile  */
@@ -452,10 +509,25 @@ margin-bottom:70px ;
  }
 .image-text p{
   font-size:3vh;
+  font-weight: 300;
    margin-right: 0px;
   text-align: justify;
   padding-top: 20px;
 }
+
+/* Cold */
+
+.cold-cofe-conatiner{
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin:0 42px ;
+  margin-bottom: 10px;
+  margin-top: 90px;
+  
+}
+
   }
 
 
